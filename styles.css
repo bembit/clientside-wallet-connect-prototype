@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Palanquin+Dark:wght@400;500;600;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark: #000a15;
+    --light: #f9f9f9;
+    --vivid1: #63c2eb;
+    --vivid2: #5ed2e4;
+    --vivid3: #4fe196;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5rem 5rem;
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: "Public Sans", sans-serif;
+}
+
+body > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a,a:visited {
+    color: var(--light);
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding: 10px 15px;
+    min-width: 250px;
+    border-radius: 20px;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+}
+
+li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+li:hover,a:hover {
+    cursor: pointer;
+    color: var(--vivid3);
+}
+
+li > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.links > a {
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.links > h3 {
+    margin-bottom: 1rem;
+}
+
+#account {
+    margin-bottom: 2rem;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-weight: 900;
+    font-size: .9rem;
+}
+
+#account:hover {
+    cursor: pointer;
+    color: var(--vivid1);
+}
+
+#hover:hover + #send {
+    display: flex;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, var(--vivid2), var(--vivid3));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.wrapper {
+    border-radius: 20px;
+    box-shadow:  2px 2px 60px -12px var(--vivid1);
+    isolation: isolate;
+    position: relative;
+}
+
+.wrapper::before {
+    background: linear-gradient(45deg, var(--vivid2) , var(--vivid3));
+    inset: -3px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.wrapper::after {
+    background: #000a12;
+    z-index: -1;
+    border-radius: 17.5px;
+    content: "";
+    inset: 0;
+    position: absolute;
+}
