@@ -3,7 +3,9 @@
 ### TL;DR - What is this?
 
 - I wanted a simple client side crypto wallet connect demo, without librairies. Just to understand how this wallet login thing works.
-- Code quality is: Smashing things together until it works.
+- Code quality is: Smashing things together until they work.
+
+Demo: soon
 
 ### Resources
 - <a href="https://eips.ethereum.org/EIPS/eip-6963#window-events">EIP-6963/window-events</a>
