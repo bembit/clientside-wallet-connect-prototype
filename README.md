@@ -1,8 +1,8 @@
-## Client Side Wallet Connect Demo, Prototype
+## Client Side Crypto Browser Wallet Connect Prototype
 
 ### TL;DR - What is this?
 
-- I wanted a simple client side crypto wallet connect demo, without librairies. Just to understand how this wallet login thing works.
+- I wanted a simple client side crypto wallet connect demo, without librairies. Just to understand how this browser wallet login thing works.
 - Code quality is: Smashing things together until they work.
 
 Demo: soon
